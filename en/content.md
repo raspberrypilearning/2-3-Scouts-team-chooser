@@ -1,35 +1,32 @@
-# Activity / project title
+# Scratch team chooser
 
 # Leader notes
 
 ## Overview
 
-This activity fulfills Stage #, Requirement # of the Digital Maker Staged Activity Badge (write clear instructions for a computer or person to follow to complete a task) and Stage x, Requirement x of the Give other badge links here. 
+This activity fulfills Stage 2, Requirement 3 of the Digital Maker Staged Activity Badge (Make a simple digital creation that uses code to interact with the wider world through inputs (such as buttons or typing on a keyboard) and outputs (such as a computer screen, sound, or lights).) and Stage x, Requirement x of the Give other badge links here. 
 
-Give an idea of what the activity is.
+Young people will create a program on Scratch that will allow a user to enter a list of names and the number of teams they would like. Then the program will create random teams and display them on the screen.
 
 ## Information 
 
-+ Time - x minutes 
-+ Group size -  xx
-+ Preparation needed - include printing and that they’ll need to download software if working offline 
-+ Location - Indoor/outdoor being primary one here
++ Time - 60 minutes 
++ Group size -  solo or pairs
++ Preparation needed - If you’re running this activity without access to the internet, you will need to download the software and starter project ahead of time. You may also wish to print handouts.
++ Location - Wherever you have computer access
 
 ## You will need
 
-+ Laptops, tablets, micro:bits
-+ These can be shared between the group, recommend x per x young people
++ Laptops or desktop computers
+  + One per solo or pair
++ Scratch either onlinee or offline
 + Activity handouts
 
-### If your meeting place has WiFi
+### If your meeting place has internet access
 
 Run Scratch online in a web browser with an internet connection using this link rpf.io/scratchon.
 
-Run the micro:bit MakeCode editor in a web browser using this link: rpf.io/makecode.
-
-### If your meeting place doesn’t have WiFi
-
-Download the micro:bit code editor software beforehand; refer to the micro:bit guide rpf.io/scouts-microbit for instructions.
+### If your meeting place doesn’t have internet access
 
 Download the Scratch Desktop application beforehand; refer to the Scratch guide rpf.io/scouts-scratch for instructions. 
 
@@ -63,6 +60,8 @@ How the output or ideas from the activity might be shared with others.
 # Activity / project title
 
 # Handout
+
+You are going to make a computer program using Scratch that will let you enter in a list of names and a number of desired teams, then it will randomly divide the names into your desired amount of teams. This will be useful when you need to split a group into smaller groups for games and activities.
 
 ## Did you know
 
