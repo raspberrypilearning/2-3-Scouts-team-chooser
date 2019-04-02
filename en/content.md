@@ -155,6 +155,36 @@ Now you will go through your list and assign a name to a team and for each name 
 
 ![](assets/demo.png)
 
+**THE BELOW CODE IS FOR SCRATCHBLOCKS.GITHUB.IO AND NOT PART OF THE RESOURCE**
+```
+when green flag clicked
+delete all of [List of names v]
+ask [How many teams would you like?] and wait
+set [Number of teams v] to (answer)
+ask [Add a name or enter 'Done'] and wait
+repeat until <(answer) = [Done]>
+add (answer) to [List of names v]
+ask [Add a name or enter 'Done'] and wait
+end
+set [i v] to (length of [List of names v])
+repeat until <(i) = [0]>
+set [j v] to (pick random [1] to (i))
+set [temp v] to (item (i) of [List of names v])
+replace item (i) of [List of names v] with (item (j) of [List of names v])
+replace item (j) of [List of names v] with (temp)
+change [i v] by [-1]
+end
+set [Team v] to [1]
+repeat until <(length of [List of names v]) = [0]>
+say (join (join [Team ](Team)) (join [: ] (item [1] of [List of names v]))) for [2] seconds
+delete [1] of [List of names v]
+change [Team v] by [1]
+if <(Team) > (Number of teams)> then
+set [Team v] to [1]
+end
+end
+```
+
 ## Discuss
 
 A question related to the activity which they can discuss in a small group. (Discuss what happens in a swap with a temp variable?)
