@@ -4,13 +4,13 @@
 
 ## Overview
 
-This activity fulfills Stage 2, Requirement 3 of the Digital Maker Staged Activity Badge (Make a simple digital creation that uses code to interact with the wider world through inputs (such as buttons or typing on a keyboard) and outputs (such as a computer screen, sound, or lights).) and Stage x, Requirement x of the Give other badge links here. 
+This activity fulfills Stage 2, Requirement 3 of the Digital Maker Staged Activity Badge (Make a simple digital creation that uses code to interact with the wider world through inputs (such as buttons or typing on a keyboard) and outputs (such as a computer screen, sound, or lights).
 
 Young people will create a program on Scratch that will allow a user to enter a list of names and the number of teams they would like. Then the program will create random teams and display them on the screen.
 
 ## Information 
 
-+ Time - 60 minutes 
++ Time - 45 minutes 
 + Group size -  solo or pairs
 + Preparation needed - If you’re running this activity without access to the internet, you will need to download the software ahead of time. You may also wish to print handouts.
 + Location - Wherever you have computer access
@@ -18,7 +18,7 @@ Young people will create a program on Scratch that will allow a user to enter a 
 ## You will need
 
 + Laptops or desktop computers
-  + One per solo or pair
++ One per solo or pair
 + Scratch either onlinee or offline
 + Activity handouts
 
@@ -32,16 +32,17 @@ Download the Scratch Desktop application beforehand; refer to the Scratch guide 
 
 ## Key messages
 
-+ These will be what the leaders need to draw out in any discussion
-+ As well as the key learning points that the activity is trying to get the 
++ We can interact with computers using external inputs from devices like keyboards.
++ We can make short programs that can solve tasks that you often face.
 
 ## Leader instructions
-1. Stepped instructions describing how the leader should deliver / present the activity
++ If they have not used Scratch before, introduce the young people to it. Explain that they will be coding using blocks that join together like Lego. Explain that the blocks are colour-coded to make them easy to find. 
++ Demonstrate writing a very simple program (perhaps move the Scratch cat or make it say something) and demonstrate testing it.
++ Explain when the young people could use their team chooser. They could use it to pick groups for a game or activity.
 
 ## Alternatives
 
-+ State whether tech-free version available (what we’ve been calling unplugged)
-+ Give other adaptations available.
++ Create a similar program using different technology (perhaps try with a micro:bit if it's available).
 
 ## Safety
 
@@ -51,11 +52,12 @@ You should also give each young person a Stay Safe leaflet (rpf.io/scouts-staysa
 
 ## Adaptability
 
-Here other badge resources primarily cover how you’d adapt this for different educational needs
++ You can learn more about using sprites in Scratch by experimenting with the Scratch cat. Try to make it move or point when calling out the names.
 
 ## Community and sharing
 
-How the output or ideas from the activity might be shared with others. 
++ You can share Scratch projects on the Scratch website by logging in and using the share option.
++ You can share your program with younger groups who might need help picking teams but may not have started to learn any coding.
 
 # Activity / project title
 
@@ -65,7 +67,7 @@ You are going to make a computer program using Scratch that will let you enter i
 
 ## Did you know
 
-+ A relevant relating to the activity.
++ The very first version of Scratch was built in 2003!
 
 ## Instructions
 
@@ -75,21 +77,21 @@ First you will create a new Scratch project and get the list of names and number
 
 1. When you open scratch, make sure you are using a new project. To do this click File -> New
 
-2. Add a `green flag clicked` block to the program from the **Events** menu.
-
-![](assets/green-flag-clicked.png)
-
-3. You will need a `variable` and a `list` to store the number of teams and the list of names. To create a new variable, select Make a Variable from the **variables** menu. Then give it a name (e.g., `Number of teams`). Then select OK.
+2. You will need a `variable` and a `list` to store the number of teams and the list of names. To create a new variable, select Make a Variable from the **variables** menu. Name it `Number of teams` and select OK.
 
 ![](assets/make-a-variable.png)
 
-4. To create a new list, select Make a List from the **variables** menu. Then give it a name (e.g., `List of names`). Then select OK.
+3. To create a new list, select Make a List from the **variables** menu. Then give it a name (e.g., `List of names`). Then select OK.
+
+4. Add a `when green flag clicked` block to the program from the **Events** menu.
+
+![](assets/green-flag-clicked.png)
 
 5. Next, you will ask the user for the number of teams they would like. Add an `ask and wait` block beneath the `green flag clicked` block. You can find it in the **Sensing** menu. Enter the question "How many teams would you like?" into the blank space in this block.
 
 ![](assets/ask-and-wait.png)
 
-6. To put the user's answer into our variable `Number of teams`, Add a `set my variable to` block beneath the `ask and wait` block. Be sure to change `my variable` to `Number of teams` using the drop down menu! You can find this block in the **Variables** menu. To finish this step add an `answer` block and drop it into the space in the `set` block. You can find it in the **Sensing** menu.
+6. To put the user's answer into our variable `Number of teams`, Add a `set my variable to` block beneath the `ask and wait` block. Be sure to change `my variable` to `Number of teams` using the drop down menu! You can find this block in the **Variables** menu. To finish this step add an `answer` block and drop it into the space in the `set` block. You can find it in the **Sensing** menu. The answer block will store the answer that the user gives to the `ask and wait` question.
 
 ![](assets/set-to.png)
 
@@ -107,31 +109,17 @@ First you will create a new Scratch project and get the list of names and number
 
 ![](assets/delete-list.png)
 
-### Part 2: Shuffling your list of names
+For testing the program from here on out you might get tired of entering names. You can swap the code as below to make testing easier by automatically filling the list. Remember to keep the code you have already written to the side, for later.
 
-For the shuffle, you will swap the last item in your list with a random one. Then move to the second last one and swap again. Then repeat until you get to the start of our list.
+![](assets/hard-code-names.png)
 
-1. First you will need 3 new variables. Create these now and call them `i`, `j` and `temp`. You can select the checkbox on these variables to make them invisible on the stage if you like.
+### Part 2: Displaying the teams.
 
-![](assets/variable-checkbox.png)
+Now you will go through your list and assign a random name to a team and for each name you will change the team number to keep the amount of names per team as fair as possible. Then you will get the Scratch cat to say each name and the team they get.
 
-2. Set `i` to the length of your list (which is also the position of the last item). Add this block to the bottom of your code.
+1. Create 2 new variables called `Team` that will store the current team and `Next team member` to store the next team member.
 
-![](assets/i-to-list-length.png)
-
-3. Add a `repeat until` block to the bottom of your code. Then add the blocks below to the inside of it. You can find the blocks in the **variables** and **operators** menus. These blocks will perform the swap described at the start of Part 2.
-
-![](assets/swap-code.png)
-
-4. Test your code, when you click the green flag, enter a number and enter some names, you should see the list randomly shuffle on the stage! If you have any issues, carefully look over the code added in the last step.
-
-### Part 3: Displaying the teams.
-
-Now you will go through your list and assign a name to a team and for each name you will change the team number to keep the amount of names per team as fair as possible. Then you will get Scratch cat to say each name and the team they get.
-
-1. Create a new variable called `Team`, this will store the current team.
-
-2. Set this new variable to 1 using a `set to` block.
+2. Set the new variable `Team` to 1 using a `set to` block and add it to the bottom of your code.
 
 ![](assets/set-team-to-1.png)
 
@@ -139,19 +127,25 @@ Now you will go through your list and assign a name to a team and for each name 
 
 ![](assets/until-length-is-0.png)
 
-4. Use a `say for 2 seconds` block inside the `repeat until` block, which can be found in the **looks** menu, to assign the first name in your list to the current team. You will need to join some blocks together for this, see below for help.
+4. Set the `Next team member` variable to a random number between 1 and the length of the list of names using the `pick random` block.
+
+![](assets/pick-random.png)
+
+5. Use a `say for 2 seconds` block inside the `repeat until` block, which can be found in the **looks** menu, to assign the `Next team member` name in your list to the current team. You will need to join some blocks together for this, see below for help.
 
 ![](assets/long-say-block.png)
 
-5. Delete the first name in the list using the `delete` block and increase the Team variable by 1 using a `change by` block.
+6. Delete that name in the list using the `delete` block and increase the Team variable by 1 using a `change by` block.
 
 ![](assets/delete-and-change-blocks.png)
 
-6. You need to make sure the Team variable never goes above the amount of teams the user entered. Add an `if then` block to check for this and set Team back to 1 if it happens.
+7. You need to make sure the Team variable never goes above the amount of teams the user entered. Add an `if then` block to check for this and set Team back to 1 if it happens.
 
 ![](assets/if-block.png)
 
-7. Finally Test your code and make sure everything works, you should see the Scratch cat announce each name with a team number beside it and see the list slowly empty as each name is displayed. 
+8. Finally Test your code and make sure everything works, you should see the Scratch cat announce each name with a team number beside it and see the list slowly empty as each name is displayed. If your code is working as expected, you can add your code from part one back in.
+
+![](assets/swap-code.png)
 
 ![](assets/demo.png)
 
@@ -166,18 +160,11 @@ repeat until <(answer) = [Done]>
 add (answer) to [List of names v]
 ask [Add a name or enter 'Done'] and wait
 end
-set [i v] to (length of [List of names v])
-repeat until <(i) = [0]>
-set [j v] to (pick random [1] to (i))
-set [temp v] to (item (i) of [List of names v])
-replace item (i) of [List of names v] with (item (j) of [List of names v])
-replace item (j) of [List of names v] with (temp)
-change [i v] by [-1]
-end
 set [Team v] to [1]
 repeat until <(length of [List of names v]) = [0]>
-say (join (join [Team ](Team)) (join [: ] (item [1] of [List of names v]))) for [2] seconds
-delete [1] of [List of names v]
+set [Next team member v] to (pick random [1] to (length of [List of names v]))
+say (join(item(Next team member) of [List of names v]) (join[ is in Team: ](Team))) for [2] seconds
+delete (Next team member) of [List of names v]
 change [Team v] by [1]
 if <(Team) > (Number of teams)> then
 set [Team v] to [1]
@@ -187,8 +174,8 @@ end
 
 ## Discuss
 
-A question related to the activity which they can discuss in a small group. (Discuss what happens in a swap with a temp variable?)
+What type of games or activities could you use this program for?
 
 ## Tip
 
-Any tips which may help the Scouts engage or get more from the activity.
+If you need a block that you have already used, you can **duplicate** it instead of searching for it again. 
