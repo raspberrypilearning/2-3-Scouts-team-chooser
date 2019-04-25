@@ -63,7 +63,7 @@ You should also give each young person a Stay Safe leaflet (rpf.io/scouts-staysa
 
 # Handout
 
-You are going to make a computer program using Scratch that will let you enter in a list of names and a number of desired teams, then it will randomly divide the names into your desired amount of teams. This will be useful when you need to split a group into smaller groups for games and activities.
+You are going to make a computer program using Scratch that will let you enter in a list of names and a number of desired teams, then it will randomly divide the names into your desired amount of teams. This will be useful when you need to split a group into smaller groups for games and activities during your weekly meetings or at camp.
 
 ## Did you know
 
@@ -175,6 +175,8 @@ end
 ## Discuss
 
 What type of games or activities could you use this program for?
+
+Think about what it means to be a good team member. Ask your young people to think about all the different types of teams they are part of? It may be a sports team, school team or scout team. 
 
 ## Tip
 
